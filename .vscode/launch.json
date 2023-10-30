@@ -1,0 +1,26 @@
+{
+  "COMMAND_LINE": "npm start",
+
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch OAUTH2 - Application (ui-app)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/react-scripts/scripts/start.js",
+      "cwd": "${workspaceFolder}",
+      "outFiles": [],
+      "sourceMaps": true,
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run-script", "start"],
+      "port": 9229 // Use the port for debugging (default is 9229)
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Launch and Debug",
+      "configurations": ["Launch RBAC - Application (ui-app)", "Chrome Debug"]
+    }
+  ]
+}
+  

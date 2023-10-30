@@ -1,0 +1,25 @@
+.maincontainer {
+  display: grid;
+  grid:
+    "header" auto
+    "main" 1fr
+    "footer" auto
+    / 1fr;
+  gap: 8px;
+}
+.headercontainer { grid-area: header; }
+
+.bodycontainer { grid-area: main; }
+.bodysection {
+  display: flex;
+  justify-content: space-between;
+}
+.navigationcontainer {
+  flex: 0 0 15%;
+  margin: 2%;
+}
+.contentcontainer {
+  flex: 0 0 85%;
+}
+
+.footercontainer { grid-area: footer; }

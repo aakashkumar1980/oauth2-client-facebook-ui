@@ -1,0 +1,38 @@
+/** ******************* **/
+/** Scrollbar for Table **/
+/** ******************* **/
+div.container-table {
+    width: auto; /* Adjust as needed */
+    display: block;
+}
+
+.styled-table table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+.styled-table thead, tbody {
+    display: block;
+}
+
+.styled-table tbody {
+    max-height: 400px; /* Adjust based on your preference for the visible height of tbody */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.styled-table thead tr, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Ensures the rows in tbody remain in sync with the header in terms of column width */
+}
+
+/* Optional: Styling for your thead and tbody rows and cells */
+.styled-table thead {
+    background-color: #f5f5f5; /* Light grey, can adjust */
+}
+
+.styled-table th, td {
+    padding: 8px 12px; /* Adjust cell padding as needed */
+}
+
